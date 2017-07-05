@@ -16,9 +16,7 @@ if len(comment) == 0:
     target = today + os.sep + now + ".zip"
 
 
-# if not os.path.exists(today):
-#     os.mkdir(today)
-#     print("create dir")
+
 
 target = today + os.sep + now + ".zip"
 zip_command = "zip -qr %s %s" % (target, " ".join(source))
